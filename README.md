@@ -26,5 +26,7 @@ TravelSnap is a mobile application developed using React Native with Expo, integ
 
 - **Expo Location and React Native Maps:** Utilized for integrating location-based features and map functionalities within the app.
 
+- **Tailwind CSS:** Employed for styling and UI design, providing utility classes to streamline development and ensure consistent visual presentation across the app.
+
 ### Implementation Details:
 You must register in Firebase and pass your own Firebase key in the Firebase.tsx file.
