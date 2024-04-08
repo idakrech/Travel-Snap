@@ -1,6 +1,6 @@
 ## TravelSnap App
 
-TravelSnap is a mobile application developed using React Native with Expo, integrated with Firebase for backend services. The app provides users with a platform to explore and share travel experiences through photos, comments, and interactions.
+TravelSnap is a mobile application developed using React Native with Expo, integrated with Firebase for backend services. The app provides users with a platform to explore and share travel experiences through photos and comments.
 
 ### Key Features:
 
