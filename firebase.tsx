@@ -11,7 +11,7 @@ import { getStorage } from "firebase/storage"
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyA3BhuDd5f6o_Kgo0MrRi71PL0uLql8OTI",
+  apiKey: 123,//insert your API key here
   authDomain: "travel-snap-72662.firebaseapp.com",
   projectId: "travel-snap-72662",
   storageBucket: "travel-snap-72662.appspot.com",
