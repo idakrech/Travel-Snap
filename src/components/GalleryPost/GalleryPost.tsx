@@ -37,7 +37,6 @@ const GalleryPost: React.FC<TGalleryPostProps> = ({
   const navigation = useNavigation<ProfilePageNavigationProp>();
 
   const handleOnImagePress = (postID:string, username:string, userImage:string, image:string, caption:string, timestamp:Timestamp, latitude:number, longitude:number, locationName:string) => {
-    // insert navigation logic here
     console.log(postID, username, userImage, image, caption, timestamp, latitude, longitude, locationName)
 
     navigation.navigate("ImageDetail", {postID:postID, username:username, userImage:userImage, image:image, caption:caption, timestamp:timestamp, latitude:latitude, longitude:longitude, locationName:locationName})
@@ -45,14 +44,12 @@ const GalleryPost: React.FC<TGalleryPostProps> = ({
 
   return (
     <TouchableOpacity 
-      // className='w-1/3'
       style={{width: '33.333%'}} 
       onPress={() => handleOnImagePress(postID, username, userImage, image, caption, timestamp, latitude, longitude, locationName)}
     >
     <ImageBackground
       source={{uri: image}}
       resizeMode='contain'
-      // className='aspect-square' 
       style={{aspectRatio: 1}}
     />
     </TouchableOpacity>

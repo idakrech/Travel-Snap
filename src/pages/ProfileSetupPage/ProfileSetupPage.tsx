@@ -27,17 +27,11 @@ export type ProfileSetupScreenNavigationProp = CompositeNavigationProp<
 
 const ProfileSetupPage = () => {
   const navigation = useNavigation<ProfileSetupScreenNavigationProp>();
-  // SKIP THESE ???
-  // const [emailValue, setEmailValue] = useState<string>("");
-  // const [passwordValue, setPasswordValue] = useState<string>("");
-  // const [confirmPasswordValue, setConfirmPasswordValue] = useState<string>("")
-  // const [username, setUsername] = useState<string>();
   const [hasGalleryPermission, setHasGalleryPermission] =
     useState<Boolean | null>(null);
   const [image, setImage] = useState<string | null>(null);
   const [location, setLocation] = useState<Location.LocationObject>();
   const [bio, setBio] = useState<string>();
-  //const [address, setAddress] = useState<string>("");
   const [generalLocation, setGeneralLocation] = useState<string>("");
 
   const userID = auth.currentUser!.uid;
@@ -134,25 +128,13 @@ const ProfileSetupPage = () => {
     });
     navigation.navigate("Main");
   };
-  // const handleLoginPress = () => {
-  //   // insert login logic here
-  //   console.log(
-  //     "user: " +
-  //       emailValue +
-  //       " \npass: " +
-  //       passwordValue +
-  //       " \nconfirm pass: " +
-  //       confirmPasswordValue
-  //   );
-  // };
+
 
   return (
     <View 
-      // className="flex-1 items-center justify-center bg-gray-100"
       style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}
       >
       <View 
-        // className=" w-[90%] h-[85%] items-center justify-center pt-9"
         style={{width: '90%', height: '85%', alignItems: 'center', justifyContent: 'center', paddingTop: 36}}
       >
         <WelcomeToTravelSnap />
@@ -162,14 +144,12 @@ const ProfileSetupPage = () => {
           onInputChange={handleUsernameChange}
         /> */}
         <Text 
-          // className="mr-2"
           style={{marginRight: 8}}
         >
           {generalLocation}
         </Text>
         <Input placeholderText="Bio" onInputChange={handleBioChange} />
         <View 
-          // className="flex items-center"
           style={{flexDirection: 'row', alignItems: 'center'}}
         >
           <ButtonBlue label="Continue" onPress={handleProfileUpdate} />

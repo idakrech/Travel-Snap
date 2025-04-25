@@ -76,17 +76,14 @@ const CameraComponent = () => {
 
   return(
     <LinearGradient 
-      // className="flex-1" colors={['#ffc0a066', '#ffe7a066']}
       style={{flex: 1}}
       colors={['#ffc0a066', '#ffe7a066']}
       >
       <View 
-      // className="flex-1 flex-row"
       style={{flex: 1, flexDirection: 'row'}}
       >
         <Camera 
         ref={ref => setCamera(ref)}
-        // className="flex-1 aspect-square" 
         style={{flex: 1, aspectRatio: 1}}
         type={type} 
         ratio="1:1"
@@ -94,14 +91,12 @@ const CameraComponent = () => {
       </View>
         { 
           image && <Image source={{uri: image}} 
-          // className="flex-1 mt-24 mb-8 ml-4 mr-4"
           style={{flex: 1, marginTop: 96, marginBottom: 32, marginLeft: 12, marginRight: 12}}
           /> 
         }
         { 
           image ? 
           <View 
-          // className="flex-row justify-around mb-8"
           style={{flexDirection: 'row', justifyContent: 'space-around', marginBottom: 32}}
           >
             <Button
@@ -112,7 +107,6 @@ const CameraComponent = () => {
             </Button>
             <Button
               mode="outlined"
-              //onPress={() => printImageData(image)}
               onPress={() => navigation.navigate('AddPost', {image: image})}
             >
               ✅
@@ -120,7 +114,6 @@ const CameraComponent = () => {
           </View>
           : 
           <View 
-          // className="flex-row justify-around mb-8"
           style={{flexDirection: 'row', justifyContent: 'space-around', marginBottom: 32}}
           >
             <Button

@@ -61,12 +61,10 @@ const RegisterPage = () => {
 
   return (
     <LinearGradient 
-    // className="flex-1 items-center justify-center bg-gray-100"
     style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}
     colors={['#ffc0a0', '#ffe7a0']}
   >
       <View 
-        // className=" w-[90%] h-[85%] items-center justify-center mt-9"
         style={{width: '90%', height: '85%', alignItems: 'center', justifyContent: 'center', marginTop: 36}}
       >
         <WelcomeToTravelSnap />
@@ -91,12 +89,10 @@ const RegisterPage = () => {
         />
 
         <View 
-          // className="flex-1 items-center"
           style={{flex: 1, alignItems: 'center'}}
         >
           <TouchableOpacity onPress={goToLoginPage}>
             <Text 
-            // className="p-4 text-gray-700 font-bold"
             style={{padding: 4, color: 'gray', fontWeight: 'bold'}}
             >Already have a user? Click here to log in</Text>
           </TouchableOpacity>

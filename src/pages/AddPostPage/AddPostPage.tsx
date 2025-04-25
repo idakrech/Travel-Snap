@@ -21,7 +21,7 @@ BottomTabNavigationProp<TabStackParamList, "AddPhoto">,
 NativeStackNavigationProp<RootStackParamList>
 >
 
-const AddPostPage = () => { //{item} : Props
+const AddPostPage = () => { 
   const navigation = useNavigation<AddPhotoScreenNavigationProp>();
   const {params: {image}} = useRoute<AddPostScreenRouteProp>();
   const [loading, setLoading] = useState(false);
